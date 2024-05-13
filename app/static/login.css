@@ -26,19 +26,7 @@ form{
     text-align: center;
 }
 
-.phone{
-    font-family: "Montserrat";
-    border: 1px solid;
-    border-color: black;
-    height: 50px;
-width: 451px;
-border-radius: 10px 10px 10px 10px;
-font-size: 16px;
-padding-left: 20px;
-}
-
-
-.password{
+.vvod {
     font-family: "Montserrat";
     border: 1px solid;
     border-color: black;
@@ -47,6 +35,11 @@ padding-left: 20px;
     border-radius: 10px 10px 10px 10px;
     font-size: 16px;
     padding-left: 20px;
+}
+
+.flash{
+    position: relative;
+    text-align: center;
 }
 
 form li{
