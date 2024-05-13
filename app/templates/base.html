@@ -3,7 +3,6 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
         {% block head %}{% endblock %}
     </head>
     <body>
@@ -13,15 +12,15 @@
                 <nav>
                     <ul>
                         <li class="kochevnik"><a href="/index"><img src="{{ url_for('static', filename='/images/Kochevnik.svg') }}" alt="Kochevnik"></a></li>
-                        <li class="nomers"><a href="/hotels">Номера</a></li>
-                        <li class="menutext"><a href="/menu">Меню</a></li>
+                        <li class="nomers"><a href="#">Номера</a></li>
+                        <li class="menutext"><a href="#">Меню</a></li>
                         <li class="kontakts"><a href="#">Контакты</a></li>
                         
                         <ul class="dost">
                             <li class="dosttext">телефон доставки</li>
                             <li class="telepo"><a href="tel:+7 (902) 565-36-77">+7 (902) 565-36-77</a></li>
                         </ul>
-                        <li class="korz"><a href="/basket"><img src="{{ url_for('static', filename='/images/4105931-add-to-cart-buy-cart-sell-shop-shopping-cart_113919 1.svg') }}" alt="Корзина"></a></li>
+                        <li class="korz"><a href="#"><img src="{{ url_for('static', filename='/images/4105931-add-to-cart-buy-cart-sell-shop-shopping-cart_113919 1.svg') }}" alt="Корзина"></a></li>
                         <li class="akk"><a href="/login"><img src="{{ url_for('static', filename='/images/account_member_profile_people_avatar_personal_user_icon_219331 1.svg') }}" alt="Аккаунт"></a></li>
                     </ul>
                 </nav>

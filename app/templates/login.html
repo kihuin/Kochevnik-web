@@ -8,16 +8,19 @@
         <script src="{{ url_for('static', filename='login.js') }}" defer></script>
     </head>
     <body>
-        <p>Добро пожаловать!</p>
-        <form>
+        <p>Добро пожаловать! {{ visits }}</p>
+        {% for msg in get_flashed_messages() %}
+        <div class="flash">{{msg}}</div>
+        {% endfor %}
+        <form action="/loginsubmit" method="post" id="login-form">
           <ul>
-            <li><input class="phone" type="tel" id="phone" pattern="2[0-9]{3}-[0-9]{3}" placeholder="Телефон" oninput="handleInput(this)">
+            <li><input class="vvod phone" type="tel" name="tel" id="phone" placeholder="Телефон" >
             </li>
-            <li><input class="password" type="password" id="password" placeholder="Пароль" oninput="handleInput(this)"></li>
-          <li><button><a href="#">Войти</a></button></li>
-          <li><button><a href="/registr">Регистрация</a></button></li>
-          
-        </ul>  </form>
+            <li><input class="vvod password" type="password" name="password" id="password" placeholder="Пароль" ></li>
+          <li><button type="submit">Войти</button></li>
+          <li><button><a href="/registrate">Регистрация</a></button></li>
+        </ul>
+        </form>
 
     </body>
 </html>
