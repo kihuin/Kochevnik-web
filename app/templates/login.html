@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Авторизация</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='login.css') }}">
+        <script src="{{ url_for('static', filename='login.js') }}" defer></script>
+    </head>
+    <body>
+        <p>Добро пожаловать!</p>
+        <form>
+          <ul>
+            <li><input class="phone" type="tel" id="phone" pattern="2[0-9]{3}-[0-9]{3}" placeholder="Телефон" oninput="handleInput(this)">
+            </li>
+            <li><input class="password" type="password" id="password" placeholder="Пароль" oninput="handleInput(this)"></li>
+          <li><button><a href="#">Войти</a></button></li>
+          <li><button><a href="/registr">Регистрация</a></button></li>
+          
+        </ul>  </form>
+
+    </body>
+</html>
